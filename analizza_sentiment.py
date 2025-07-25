@@ -29,8 +29,8 @@ def analizza_sentiment(recensioni):
         - Neutre: non contiene né parole positive né negative
     """
     # Definizione delle parole chiave (case-insensitive)
-    parole_positive = {"buono", "ottimo", "fantastico"}
-    parole_negative = {"cattivo", "pessimo", "terribile"}
+    parole_positive = {"buono", "ottimo", "fantastico", "eccellente", "superbo", "magnifico", "splendido", "meraviglioso", "eccezionale", "incredibile", "perfetto", "soddisfacente", "positivo", "bello", "gradevole", "piacevole", "squisito", "valido", "efficace", "impressionante", "favoloso", "stupendo", "geniale", "formidabile", "riuscito", "apprezzabile", "consigliato", "affidabile", "comodo", "veloce", "facile", "intuitivo"}
+    parole_negative = { "cattivo", "pessimo", "terribile", "orribile", "sgradevole", "spiacevole", "negativo", "scarso", "insufficiente", "deludente", "disastroso", "fallimentare", "inadeguato", "difettoso", "problematico", "inutile", "dannoso", "nocivo", "sconveniente", "inefficace", "brutto", "ingiusto", "lento", "complesso", "frustrante", "delusione", "critico", "malfunzionamento", "bug", "errore"}
     
     # Inizializzazione contatori
     conteggi = {"positive": 0, "negative": 0, "neutre": 0}
